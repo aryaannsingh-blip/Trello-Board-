@@ -1,0 +1,415 @@
+.primary {
+  background: var(--accent-bright);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: var(--accent);
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.error {
+  color: var(--danger);
+}
+
+.notice {
+  color: var(--success);
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ---------- Auth ---------- */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  width: 380px;
+  max-width: 100%;
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-logo {
+  text-align: center;
+  font-size: 30px;
+  color: var(--accent-bright);
+  margin: 0;
+}
+
+.auth-tabs {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.auth-tabs button.active {
+  background: var(--accent-bright);
+  color: #fff;
+}
+
+/* ---------- Shared layout ---------- */
+
+.topbar {
+  background: rgba(0, 0, 0, 0.15);
+  color: #fff;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.topbar .brand {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar .user {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.topbar button {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.topbar .back {
+  font-weight: 600;
+}
+
+.banner {
+  padding: 10px 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.banner.error {
+  background: var(--danger);
+  color: #fff;
+}
+
+.banner.notice {
+  background: var(--success);
+  color: #fff;
+}
+
+/* ---------- Dashboard ---------- */
+
+.dash-body {
+  display: flex;
+  gap: 18px;
+  padding: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.org-sidebar {
+  flex: 0 0 260px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 14px;
+  color: #fff;
+}
+
+.org-sidebar h3 {
+  color: #fff;
+  opacity: 0.85;
+}
+
+.org-sidebar ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.org-sidebar li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+}
+
+.org-sidebar li:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.org-sidebar li.active {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.org-sidebar .org-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: var(--success);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.badge.member {
+  background: var(--accent-bright);
+}
+
+.badge.admin {
+  background: var(--success);
+}
+
+.org-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.org-header h2 {
+  color: #fff;
+}
+
+.org-header p {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.member-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.member-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--panel);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.link.danger {
+  background: none;
+  border: none;
+  color: var(--danger);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0;
+}
+
+.inline-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.inline-form input {
+  flex: 1;
+  min-width: 0;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.board-card {
+  background: var(--accent-bright);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  min-height: 80px;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.board-card:hover {
+  background: var(--accent);
+}
+
+/* ---------- Board view ---------- */
+
+.board-view {
+  min-height: 100vh;
+}
+
+.assignee-row {
+  padding: 12px 18px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.assignee-row .field {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.columns {
+  display: flex;
+  gap: 12px;
+  padding: 14px 18px 24px;
+  align-items: flex-start;
+  overflow-x: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 0 0 280px;
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.column-title {
+  margin: 0;
+  padding: 4px 6px;
+}
+
+.column-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 10px;
+}
+
+.issue-card {
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.issue-title {
+  font-size: 14px;
+  line-height: 1.35;
+  cursor: text;
+}
+
+.issue-title input {
+  width: 100%;
+}
+
+.issue-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.issue-assignee {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.issue-controls select {
+  font-size: 13px;
+  padding: 5px 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.add-issue {
+  margin-top: 2px;
+}
+
+.create-org-form {
+  max-width: 380px;
+}
